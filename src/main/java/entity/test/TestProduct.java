@@ -17,19 +17,19 @@ import javax.persistence.Table;
  * @author nutchg5
  */
 @Entity
-@Table(name="idx_sinvest_user")
-public class User {
+@Table(name="idx_sinvest_test_product")
+public class TestProduct {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private long id;
     
-    @Column(name="user_name")
-    private String userName;
+    @Column(name="product_name")
+    private String productName;
     
-    @Column(name="password")
-    private String password;
+    @Column(name="product_description")
+    private String productDescription;
 
     public long getId() {
         return id;
@@ -39,20 +39,21 @@ public class User {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getProductName() {
+        return productName;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
-    public String getPassword() {
-        return password;
+    public String getProductDescription() {
+        return productDescription;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setProductDescription(String productDescription) {
+        this.productDescription = productDescription;
     }
+    
     
 }
